@@ -14,9 +14,57 @@
 | **Not a fixed code** | The code is randomized per player, per save or per robbery. |
 | **Confirmed by Rockstar** | *No entry qualifies.* Rockstar has not published any codes. |
 
-**Coordinates:** No source publishes GPS or grid coordinates for these spots. GTABase's interactive map only renders in a browser, so I couldn't read its markers. Rather than invent numbers, each map position below uses the district or landmark the guides name. [`map.svg`](map.svg) places each location by region only. It is a schematic, not a traced in-game map.
+**Map and coordinates:** Positions are plotted on the real GTA VI map. The base layer is gtadb.org's in-game map tiles, and named landmarks come from gtadb.org's landmarks data (both CC BY 4.0, from [github.com/rolux/gtadb.org](https://github.com/rolux/gtadb.org)). **Grid references** (e.g. **D7**) use the 1–9 / A–M grid of the *Visit Leonida* poster map. I aligned that poster to the gtadb map by matching coastlines, and every test landmark landed on its poster label. In-game coordinates (metres) and the basis for each pin are in [`data/locations.json`](data/locations.json) and the table below. No guide publishes exact coordinates, so most pins sit at district level: they have a halo on the map and are tagged *approx* or *district* below. To re-render: `tools/render_map.py`.
 
-![Schematic map](map.svg)
+![GTA VI code-locked locations on the in-game map](map.jpg)
+
+### Map positions
+
+| # | Location | Grid | In-game x, y (m) | Precision | Basis |
+|---|---|---|---|---|---|
+| 1 | President's Bunker (Sharktooth Island) | D7 | 207, 5281 | landmark | gtadb 'Presidential Bunker, Leonard County' (tagged unconfirmed) / 'Sharktooth Island' |
+| 3 | IAA Black Site hatch | I4 | -5333, -1700 | approx | forest near Big Pine (gtadb 'Big Pine'); NPCWire instead says the highway south of an Ammu-Nation |
+| 4 | Abandoned facility / UFO bunker | J6 | -2776, -4421 | landmark | gtadb 'Southpoint Airfield, Mariana County' (tagged unconfirmed) |
+| 5 | Frampton Island bunker | B6 | -1474, 8237 | district | Frampton Islands (which island isn't stated) |
+| 6 | Pelican Valley crab outpost | J5 | -3550, -4200 | approx | between Gullet Marsh and Cottonmouth Lake, SE of Watson Bay |
+| 7 | Haunted Marbelle Hotel | G7 | -680, 650 | approx | south Crosstown near NINE1NINE (gtadb -671,468) |
+| 8 | Cottonmouth Lake trailer | K5 | -3750, -5000 | approx | SW sandbar/spit of Cottonmouth Lake (gtadb lake -3480,-4788) |
+| 9 | Stone Hills firewatch shed | C4 | -5100, 6400 | approx | West Lummox County, Mount Kalaga NP |
+| 10 | Del Rio Blvd garage (Boobie's laptop chain) | G7 | -962, 1486 | district | La Perle; the laptop is in Bayside (-348,983) |
+| 11 | Father Scrumpy's Red Apple Orchard | D4 | -5916, 5201 | landmark | labelled on the Visit Leonida map |
+| 12 | Key Lento party house garage | K6 | -2200, -6150 | approx | SE corner of Key Lento |
+| 13 | Belville abandoned laundry | F6 | -1600, 3050 | approx | NW Belville |
+| 14 | Belpoint shipwreck | H2 | -7910, -430 | district | Belpoint |
+| 15 | Black Eagle warehouse | G6 | -1794, 601 | district | Balsero |
+| 16 | Slum House | - | - | unplaced | 'Vice City' only |
+| 17 | Stormy back room | - | - | unplaced | 'Vice City' only |
+| 18 | Tiger mansion | - | - | unplaced | not stated |
+| 19 | '74 Vamos garage | C4 | -5452, 6720 | district | Grayson (Visit Leonida map label) |
+| 20 | Moonstone Boutique acid lab | K6 | -2600, -5700 | district | Artist Village, Key Lento |
+| 21 | Brian's Lockup | K6 | -2555, -5859 | approx | Key Lento, beside Isla Tropical Private Club; shown at Brian's Boat Works (gtadb) |
+| 22 | Delights Cabaret | E3 | -6360, 3591 | landmark | gtadb 'Delights, Interstate 404, Port Gellhorn' |
+| 23 | Raul's garage | - | - | unplaced | not stated |
+| 24 | Balsero Kitty Litter Lab | G6 | -1850, 700 | district | Balsero |
+| 25 | Yasmani jobs (3 stores) | H7 | -637, -150 | district | Richardson: Downtown; Donovan Banks: Peacock Bay; Casa de Empeno: Vice City |
+| 26 | Pilot Pete's hangar | E7 | -817, 4360 | landmark | gtadb 'Sundown Private Airfield, Sundown, Waning Sands' |
+| 27 | Legendary Custom Jewelry | G8 | 1731, 740 | district | Ocean Beach mall |
+| 28 | Fleeca on Thompson | - | - | unplaced | 'Vice City' only |
+| 29 | Brooks Boatworks | E3 | -6300, 4000 | approx | NE Port Gellhorn docks |
+| 30 | La Cascara Motel | E3 | -6700, 3750 | approx | west Port Gellhorn |
+| 31 | Kingpin Bowling | E3 | -6491, 3650 | district | Port Gellhorn |
+| 32 | Sunrise RV Park | - | - | unplaced | guides disagree (Cottonmouth Lake / Grassrivers / Hamlet); the map only shows a 'Paradise RV Park' |
+| 33 | Nova Auto Junkyard | J6 | -2683, -3241 | district | Hamlet |
+| 34 | Farm Fix meth lab | - | - | unplaced | McKittrick Farm, Leonard County: not on the map |
+| 35 | Janjak's Garage | G7 | -962, 1380 | approx | south La Perle |
+| 36 | Illegal Sneaker Trade / Drip Drops | - | - | unplaced | 'Vice City' only |
+| 37 | Casa Guardia | G7 | -1100, 150 | approx | NE Little Cuba |
+| 38 | Saber Shipping Facility | G6 | -1750, 500 | district | Balsero |
+| 39 | Saber Shipping Yard | G6 | -1350, 40 | approx | west Little Cuba by the river |
+| 40 | Palmer Fishing Warehouse | J4 | -5028, -3327 | district | Watson Bay |
+| 41 | Watson Bay Safehouse | J4 | -4950, -3250 | district | Watson Bay |
+| 42 | Thirsty Wolf clubhouse | E6 | -2776, 3890 | district | gtadb lists 'The Thirsty Wolf, Ambrosia' without coordinates |
+| 43 | Leonida Carrier Warehouse | G6 | -1700, 700 | district | Balsero |
+| 44 | 'Don't Flush' sewage plant | I5 | -3154, -2773 | landmark | gtadb 'Sewage Treatment Plant, Hamlet'; the QR poster is on Corsair Key (-1254,-4533) |
 
 ---
 
@@ -26,26 +74,26 @@
 
 | # | Location | Map position | Access code | Entry requirements / how the code is found | Contents / rewards | Verification | Sources |
 |---|---|---|---|---|---|---|---|
-| 1 | **President's Bunker** (Joe S. Russo bunker) | **Conflict:** "Sharktooth Island, south of Little Hardin Island, Leonard County" (ProdigyGamers) vs "island north of Waning Sands" (GTA Scoop) | **010317** (01‑03‑17) | Chain quest. Talk to the NPC at the IAA "Friends of Freedom" / Joe S. Russo landmark in Downtown (Catalan Blvd bus stop). He gives a Little Cuba address (NW 4th Ave, salmon-colored building with Cuban flags). In that apartment, a photo stand hint gives Russo's birthdate (3 Jan 1917), and a hanging picture points to the island. | Bunker interior: power box, office, phone, recordings. Leads to #2. | Credibly documented (2 sources) | [ProdigyGamers](https://prodigygamers.com/2026/11/21/gta-6-secret-bunker-door-safe-hatch-unlock-codes-mystery-solved/), [GTA Scoop](https://gtascoop.com/guides/gta-6-safe-codes/) |
-| 2 | **President's Safe** (inside #1) | Same bunker | **2975** | Power on the electrical box. Sit in the chair, take the cigar and use the phone. A recording in the next room gives "5297" and "Protocol 2". A desk document defines Protocol 2 as 2341. Reorder 5297 by that rule to get 2975 (the guide doesn't fully explain this step). | **President Russo's 1922 Pistol** (unique) and a photo that leads to #3 | Credibly documented (2 sources) | ProdigyGamers, GTA Scoop |
-| 3 | **IAA Black Site hatch** | **Conflict:** "Big Pine / Tola Bay, Mariana County" (ProdigyGamers) vs "hatch south of the Ammu-Nation, North Mariana County" (GTA Scoop) | **085355** | The photo from safe #2 carries the word **OBSESS**. Enter it on the keypad (on a tree near the bunker) as 085355. The hatch is hidden in grass behind the bunker door. Inside, power the box and press the red button in the control room to open the exit. | **Legendary Cold War 556 Assault Rifle** and a **Hauners Ridgway tank** (named by NPCWire and KeenGamer). Hold To Reset also mentions a *Brainwashed* side mission. | Credibly documented (2 sources) | ProdigyGamers, GTA Scoop |
-| 4 | **Abandoned government facility / "UFO bunker"** | **Conflict:** "restricted area east of Manatee Motel, South Point Airfield" (The Big Lead) vs "east side of Cottonmouth Lake near Shoeless Keys, off Boundary Road" (ScreenHype). Probably the same site. | **A permutation of 1‑2‑3‑4** (no repeats). Varies per player: one writer got 2341, another 3214. | Trigger it by witnessing the UFO abduction at night. The Big Lead puts that on the NW road in Manifest Canyon. ScreenHype says after Chapter 1, near the Starlet Motel in Kelly County after 2 am. Then sleep as that character until the dream. In the dream, the keypad answer comes from "counting the lines above it". At the real site, break the fence, take the roof hatch down to the keypad, and use the elevator. Light all four panel lights. Take the milk from the left door and put it in the machine behind the right door. **Avoid the middle door (radiation).** | **Permanent max health, stamina and focus boost.** You carry out a live alien to be beamed up. Achievement: *The Truth Is Out There*. | Confirmed in gameplay (3 sources, 2 hands-on) | [The Big Lead](https://www.thebiglead.com/gta-6-keypad-door-code-south-point-airfield/), [ScreenHype](https://www.screenhype.co.uk/how-to-access-the-abandoned-site-in-gta-6-the-truth-is-out-there/), [Game Rant](https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/) |
-| 5 | **Frampton Island bunker** | "Northeast of Lummox County, top of the map" | **3612** | No in-game clue is known. Game Rant says the community **brute-forced** it. An X user had earlier reported the door with no code found. | Stairs, a sewer pipe, a hanging body, eerie music. **"Nothing else down here"**, so far just set dressing. | Single source for the code (the door itself has 2 reports) | [Game Rant](https://gamerant.com/gta-6-frampton-island-bunker-code/), [X post](https://x.com/BearPigCentral/status/2124629054628495538) |
-| 6 | **Pelican Valley Crab Research Outpost** (3-step chain) | Pelican Valley swamp. Region disputed: Grassrivers / Gullet Marsh / "Mariana County swamps, north of the Keys". | **CLEAVES** (PC login) → **0072** (safe) → **0212** (dock door) | Flip the breaker outside. CLEAVES is chalked on the floor of a side room. The researcher's note gives specimen ID 0036; double it to get 0072. The note in that safe gives 0212 for the keypad door at the end of the dock. Some early guides wrongly gave 0072 for the dock door. | Safe: ~$1,000+ and the dock code. Dock building: **Crabshack VF5 SMG** and marked bills. | Confirmed in gameplay (6+ sources) | [Vice City DB](https://vicecitydb.org/codes), [RetroBroker](https://retrobroker.com/en-US/us/blog/gta-6-safe-codes-locations), GTA Scoop, Game Rant, [GTA6Heists](https://www.gta6heists.com/robberies/safe-codes), [IBTimes](https://www.ibtimes.co.uk/gta-6-safe-codes-gang-hideouts-hidden-locations-1833861) |
-| 7 | **Haunted Marbelle Hotel** (Silent Hill-style secret) | Crosstown, Vice City | **955214** | GTA Scoop: an "Old Note" on the roof. The search summary said the code is written on a top-floor wall. Game Rant puts the safe on the ground floor. | **Crowex Ambassador 'Breakfast' watch** (collectible) and cash | Confirmed in gameplay (3 sources) | Game Rant, GTA Scoop, IBTimes |
-| 8 | **Cottonmouth Lake abandoned trailer** | SW sandy spit of Cottonmouth Lake, by the burned houses, south of Gullet Marsh. Some map apps label it "Key Lento #19". | **44017** | White marks on the postcards and photos on the bedroom wall. Safe is under the microwave. Can be done during *Find the Lost Drugs*. | A little cash and the **Laki Maivia** bronze card (Los Santos Pounders set) | Confirmed in gameplay (5 sources; GTA Scoop: "we opened this one ourselves") | GTA Scoop, Vice City DB, Game Rant, RetroBroker, IBTimes |
-| 9 | **Mount Kalaga firewatch shed** | Base of the watchtower, Mount Kalaga National Park (Stone Hills) | **69185** (some guides say 691865) | A purple sticky note / board in the cabin at the top of the tower. | **Area 69 Watch Guard Logbook** | Confirmed in gameplay. **Conflict:** Vice City DB, Game Rant and GTA Scoop say 69185; RetroBroker says 691865. 69185 is the majority reading, so try it first. | Vice City DB, Game Rant, GTA Scoop, RetroBroker, GTA6Heists |
-| 10 | **Boobie's laptop → Del Rio Blvd garage** | Laptop: Bayside apartment, Vice City. Garage: Del Rio Blvd next to Auntie's Place, La Perle. | **MuffinsQueen15** (laptop) → **92665** (garage) | Chapter 3. Password clues: dog photo (Muffins), painting (Queen), "Class of '15". Early guides printed "MuffinsKing15", which is wrong. The garage code is in the laptop's "Unknown" messages, and the keypad only works after you read them. | **Vanessa's Growler** (pink Pfister) and a free garage | Confirmed in gameplay (3 sources) | Vice City DB, GTA Scoop, Game Rant |
-| 11 | **Father Scrumpy's Red Apple Orchard garage** | Manifest Canyon (Vice City DB) / Kelly County (Game Rant) | **360782** | Climb the blue tractor onto the awning and into the red barn's loft. A *ManlyGaze* magazine there is **Issue 36, July 1982**, which gives 360782. | **Declasse Applesauce Bobcat** | Credibly documented (2 sources) | Vice City DB, Game Rant |
-| 12 | **Key Lento party house garage** | Key Lento, Leonida Keys | **092319** | Clue not documented | **Invetero Spiderweb Coquette** | Credibly documented (2 sources; Vice City DB marks it "Unconfirmed") | Game Rant, Vice City DB |
-| 13 | **Abandoned laundry / laundromat** | Belville, Ambrosia | **62412** | Get in through the roof opening. The code is written beneath the collectible card. | Reinforced wall safe; loot not specified | Credibly documented (3 sources, but Vice City DB says "not yet verified") | Game Rant, RetroBroker, Vice City DB |
-| 14 | **Belpoint shipwreck** | Leonida Keys | **4242** | Not documented | Cash | Single source | Game Rant |
-| 15 | **Black Eagle (B.E.) Warehouse** | Balsero, Vice City | **789987** (office door) → **031462** (safe) | Keypad on the office door in the front corner of the warehouse | **Black Eagle Import Kalinga .50** pistol and cash | Credibly documented (2 sources; GTA6Heists: "not read on screen", though the game shows the safe code starts with 03) | Game Rant, GTA6Heists |
-| 16 | **Slum House** | Vice City | **9790** | Not documented | Loot | Single source | Game Rant |
-| 17 | **"Stormy" back room** | Vice City | **7869** | Not documented | Not listed | Single source | Game Rant |
-| 44 | **"Don't Flush" QR conspiracy / Hamlet sewage plant** | QR poster in a public restroom on Corsair Key (NE of Key Lento). The plant is in Hamlet. | **00‑00‑02** (a code you hand to an NPC, not a keypad) | Scan the QR code with the in-game WAiNK app and reply "TRUTH". You receive 00‑00‑02; after dark, give it to Dr. Merle at Frank's Waffles in Tequesta. He opens a locked gate at the Hamlet sewage plant. Upstairs, set the middle and bottom red lights to green and pull the main lever to reveal a hidden staircase. | **Permanent max stamina increase** | Single source (Dexerto wiki) | [Dexerto](https://www.dexerto.com/wikis/gta-6/easter-eggs/dont-flush-qr-code-easter-egg/) |
-| 18 | **Tiger mansion** (guarded house with a caged tiger) | Not stated | **4377** | House robbery. Sticky note at the reception desk. | $550 cash | Single source ("seen in game") | GTA6Heists |
-| 19 | **'74 Vamos garage** | Grayson, Leonard County | **2727** | *Steal Vehicles for Moses* (Ch. 2). Read the house-number plaques on the next house. | **Declasse '74 Vamos** | Confirmed in gameplay (5 sources) | GTA Scoop, Game Rant, RetroBroker, GTA6Heists |
+| 1 | **President's Bunker** (Joe S. Russo bunker) | **D7** · Sharktooth Island, Leonard County, in gtadb's landmark data, just north of Waning Sands. ProdigyGamers' "south of Little Hardin Island" and GTA Scoop's "north of Waning Sands" both fit this spot. | **010317** (01‑03‑17) | Chain quest. Talk to the NPC at the IAA "Friends of Freedom" / Joe S. Russo landmark in Downtown (Catalan Blvd bus stop). He gives a Little Cuba address (NW 4th Ave, salmon-colored building with Cuban flags). In that apartment, a photo stand hint gives Russo's birthdate (3 Jan 1917), and a hanging picture points to the island. | Bunker interior: power box, office, phone, recordings. Leads to #2. | Credibly documented (2 sources) | [ProdigyGamers](https://prodigygamers.com/2026/11/21/gta-6-secret-bunker-door-safe-hatch-unlock-codes-mystery-solved/), [GTA Scoop](https://gtascoop.com/guides/gta-6-safe-codes/) |
+| 2 | **President's Safe** (inside #1) | **D7** · Same bunker | **2975** | Power on the electrical box. Sit in the chair, take the cigar and use the phone. A recording in the next room gives "5297" and "Protocol 2". A desk document defines Protocol 2 as 2341. Reorder 5297 by that rule to get 2975 (the guide doesn't fully explain this step). | **President Russo's 1922 Pistol** (unique) and a photo that leads to #3 | Credibly documented (2 sources) | ProdigyGamers, GTA Scoop |
+| 3 | **IAA Black Site hatch** | **I4** (approx) · **Conflict:** "Big Pine / Tola Bay, Mariana County" (ProdigyGamers) vs "hatch south of the Ammu-Nation, North Mariana County" (GTA Scoop) | **085355** | The photo from safe #2 carries the word **OBSESS**. Enter it on the keypad (on a tree near the bunker) as 085355. The hatch is hidden in grass behind the bunker door. Inside, power the box and press the red button in the control room to open the exit. | **Legendary Cold War 556 Assault Rifle** and a **Hauners Ridgway tank** (named by NPCWire and KeenGamer). Hold To Reset also mentions a *Brainwashed* side mission. | Credibly documented (2 sources) | ProdigyGamers, GTA Scoop |
+| 4 | **Abandoned government facility / "UFO bunker"** | **J6** · South Point Airfield, Mariana County, south of Hamlet. The Big Lead says "east of Manatee Motel"; ScreenHype says "east side of Cottonmouth Lake near Shoeless Keys". On the map those two descriptions point to the same spot. | **A permutation of 1‑2‑3‑4** (no repeats). Varies per player: one writer got 2341, another 3214. | Trigger it by witnessing the UFO abduction at night. The Big Lead puts that on the NW road in Manifest Canyon. ScreenHype says after Chapter 1, near the Starlet Motel in Kelly County after 2 am. Then sleep as that character until the dream. In the dream, the keypad answer comes from "counting the lines above it". At the real site, break the fence, take the roof hatch down to the keypad, and use the elevator. Light all four panel lights. Take the milk from the left door and put it in the machine behind the right door. **Avoid the middle door (radiation).** | **Permanent max health, stamina and focus boost.** You carry out a live alien to be beamed up. Achievement: *The Truth Is Out There*. | Confirmed in gameplay (3 sources, 2 hands-on) | [The Big Lead](https://www.thebiglead.com/gta-6-keypad-door-code-south-point-airfield/), [ScreenHype](https://www.screenhype.co.uk/how-to-access-the-abandoned-site-in-gta-6-the-truth-is-out-there/), [Game Rant](https://gamerant.com/gta-6-safe-codes-keypad-combinations-door-passwords-list/) |
+| 5 | **Frampton Island bunker** | **B6** · "Northeast of Lummox County, top of the map" | **3612** | No in-game clue is known. Game Rant says the community **brute-forced** it. An X user had earlier reported the door with no code found. | Stairs, a sewer pipe, a hanging body, eerie music. **"Nothing else down here"**, so far just set dressing. | Single source for the code (the door itself has 2 reports) | [Game Rant](https://gamerant.com/gta-6-frampton-island-bunker-code/), [X post](https://x.com/BearPigCentral/status/2124629054628495538) |
+| 6 | **Pelican Valley Crab Research Outpost** (3-step chain) | **J5** · Pelican Valley swamp. Region disputed: Grassrivers / Gullet Marsh / "Mariana County swamps, north of the Keys". | **CLEAVES** (PC login) → **0072** (safe) → **0212** (dock door) | Flip the breaker outside. CLEAVES is chalked on the floor of a side room. The researcher's note gives specimen ID 0036; double it to get 0072. The note in that safe gives 0212 for the keypad door at the end of the dock. Some early guides wrongly gave 0072 for the dock door. | Safe: ~$1,000+ and the dock code. Dock building: **Crabshack VF5 SMG** and marked bills. | Confirmed in gameplay (6+ sources) | [Vice City DB](https://vicecitydb.org/codes), [RetroBroker](https://retrobroker.com/en-US/us/blog/gta-6-safe-codes-locations), GTA Scoop, Game Rant, [GTA6Heists](https://www.gta6heists.com/robberies/safe-codes), [IBTimes](https://www.ibtimes.co.uk/gta-6-safe-codes-gang-hideouts-hidden-locations-1833861) |
+| 7 | **Haunted Marbelle Hotel** (Silent Hill-style secret) | **G7** · Crosstown, Vice City | **955214** | GTA Scoop: an "Old Note" on the roof. The search summary said the code is written on a top-floor wall. Game Rant puts the safe on the ground floor. | **Crowex Ambassador 'Breakfast' watch** (collectible) and cash | Confirmed in gameplay (3 sources) | Game Rant, GTA Scoop, IBTimes |
+| 8 | **Cottonmouth Lake abandoned trailer** | **K5** · SW sandy spit of Cottonmouth Lake, by the burned houses, south of Gullet Marsh. Some map apps label it "Key Lento #19". | **44017** | White marks on the postcards and photos on the bedroom wall. Safe is under the microwave. Can be done during *Find the Lost Drugs*. | A little cash and the **Laki Maivia** bronze card (Los Santos Pounders set) | Confirmed in gameplay (5 sources; GTA Scoop: "we opened this one ourselves") | GTA Scoop, Vice City DB, Game Rant, RetroBroker, IBTimes |
+| 9 | **Mount Kalaga firewatch shed** | **C4** · Base of the watchtower, Mount Kalaga National Park (Stone Hills) | **69185** (some guides say 691865) | A purple sticky note / board in the cabin at the top of the tower. | **Area 69 Watch Guard Logbook** | Confirmed in gameplay. **Conflict:** Vice City DB, Game Rant and GTA Scoop say 69185; RetroBroker says 691865. 69185 is the majority reading, so try it first. | Vice City DB, Game Rant, GTA Scoop, RetroBroker, GTA6Heists |
+| 10 | **Boobie's laptop → Del Rio Blvd garage** | **G7** · Laptop: Bayside apartment, Vice City. Garage: Del Rio Blvd next to Auntie's Place, La Perle. | **MuffinsQueen15** (laptop) → **92665** (garage) | Chapter 3. Password clues: dog photo (Muffins), painting (Queen), "Class of '15". Early guides printed "MuffinsKing15", which is wrong. The garage code is in the laptop's "Unknown" messages, and the keypad only works after you read them. | **Vanessa's Growler** (pink Pfister) and a free garage | Confirmed in gameplay (3 sources) | Vice City DB, GTA Scoop, Game Rant |
+| 11 | **Father Scrumpy's Red Apple Orchard garage** | **D4** · Manifest Canyon (Vice City DB) / Kelly County (Game Rant) | **360782** | Climb the blue tractor onto the awning and into the red barn's loft. A *ManlyGaze* magazine there is **Issue 36, July 1982**, which gives 360782. | **Declasse Applesauce Bobcat** | Credibly documented (2 sources) | Vice City DB, Game Rant |
+| 12 | **Key Lento party house garage** | **K6** · Key Lento, Leonida Keys | **092319** | Clue not documented | **Invetero Spiderweb Coquette** | Credibly documented (2 sources; Vice City DB marks it "Unconfirmed") | Game Rant, Vice City DB |
+| 13 | **Abandoned laundry / laundromat** | **F6** · Belville, Ambrosia | **62412** | Get in through the roof opening. The code is written beneath the collectible card. | Reinforced wall safe; loot not specified | Credibly documented (3 sources, but Vice City DB says "not yet verified") | Game Rant, RetroBroker, Vice City DB |
+| 14 | **Belpoint shipwreck** | **H2** · Leonida Keys | **4242** | Not documented | Cash | Single source | Game Rant |
+| 15 | **Black Eagle (B.E.) Warehouse** | **G6** · Balsero, Vice City | **789987** (office door) → **031462** (safe) | Keypad on the office door in the front corner of the warehouse | **Black Eagle Import Kalinga .50** pistol and cash | Credibly documented (2 sources; GTA6Heists: "not read on screen", though the game shows the safe code starts with 03) | Game Rant, GTA6Heists |
+| 16 | **Slum House** | *unplaced* · Vice City | **9790** | Not documented | Loot | Single source | Game Rant |
+| 17 | **"Stormy" back room** | *unplaced* · Vice City | **7869** | Not documented | Not listed | Single source | Game Rant |
+| 44 | **"Don't Flush" QR conspiracy / Hamlet sewage plant** | **I5** · QR poster in a public restroom on Corsair Key (NE of Key Lento). The plant is in Hamlet. | **00‑00‑02** (a code you hand to an NPC, not a keypad) | Scan the QR code with the in-game WAiNK app and reply "TRUTH". You receive 00‑00‑02; after dark, give it to Dr. Merle at Frank's Waffles in Tequesta. He opens a locked gate at the Hamlet sewage plant. Upstairs, set the middle and bottom red lights to green and pull the main lever to reveal a hidden staircase. | **Permanent max stamina increase** | Single source (Dexerto wiki) | [Dexerto](https://www.dexerto.com/wikis/gta-6/easter-eggs/dont-flush-qr-code-easter-egg/) |
+| 18 | **Tiger mansion** (guarded house with a caged tiger) | *unplaced* · Not stated | **4377** | House robbery. Sticky note at the reception desk. | $550 cash | Single source ("seen in game") | GTA6Heists |
+| 19 | **'74 Vamos garage** | **C4** · Grayson, Lummox County (per the poster map; GTA Scoop says Leonard County) | **2727** | *Steal Vehicles for Moses* (Ch. 2). Read the house-number plaques on the next house. | **Declasse '74 Vamos** | Confirmed in gameplay (5 sources) | GTA Scoop, Game Rant, RetroBroker, GTA6Heists |
 
 ### B. Story and mission codes
 
@@ -53,15 +101,15 @@ These are fixed codes the game hands you, usually by phone, text or job card, an
 
 | # | Location | Map position | Code | Requirements / clue | Contents / rewards | Verification | Sources |
 |---|---|---|---|---|---|---|---|
-| 20 | Moonstone Boutique back room (acid lab) | Artist Village, Key Lento | **0420** | Ch. 1 *Lab Fees*. Threaten the clerk, or read the sticky note. | Hidden acid lab | Confirmed in gameplay (7 sources) | all major guides |
-| 21 | Brian's Lockup | Key Lento, beside Isla Tropical Private Club | **7700** | *Lab Fees*. Brian phones it in. Play as Jason; the metal door is down the side alley. | Brian's strongbox for fencing loot | Confirmed in gameplay (7 sources) | all major guides |
-| 22 | Delights Cabaret, Frankie's office | Port Gellhorn | **2008** | Ch. 2 *Afternoon Delight* / "Rob Vicki's Boss". Vicki texts it. | TitanVault safe: ~$115 and marked bills | Confirmed in gameplay | Vice City DB, GTA Scoop, Game Rant, IBTimes, GTA6Heists |
-| 23 | Raul's garage shutter | Not stated | **2404** | Ch. 3 *First Impressions*. Saved to Notes. | **Schafter V12** getaway car | Credibly documented (2 sources) | GTA Scoop, Game Rant |
-| 24 | Balsero Kitty Litter Lab (central building) | Balsero, Vice City | **1999** | Ch. 3 *Take Out Kitty Litter* | $2,500 | Single source | Game Rant |
-| 25 | Yasmani's Jewelry Jobs: Casa de Empeño / Richardson Jewelry / Donovan Banks & Co. | Vice City (Richardson: Downtown; Donovan: Peacock Bay) | **1680 / 6815 / 0104** | Ch. 3. Codes are on the job card. **They only work during the job;** robbing later gives a random code. | Buffalo Skull Chain / Diamond Ring / Amethyst Necklace | Confirmed in gameplay | Vice City DB, GTA Scoop, Game Rant, IBTimes, GTA6Heists, RetroBroker |
-| 26 | Pilot Pete's hangar (back room, red door) | Sundown Private Airfield | **3718** | Ch. 4 *The Last Mile: Passing the Torch* | Pete's stash / cash | Confirmed (4 sources, though GTA6Heists rates it "one guide") | Game Rant, GTA Scoop, IBTimes, GTA6Heists |
-| 27 | Legendary Custom Jewelry | Ocean Beach mall, Vice City | **4207** | Ch. 4 mall heist (*Mall Rats*). Staff give it up. | Jewelry | Credibly documented; **"may vary"** | GTA Scoop, GTA6Heists |
-| 28 | Fleeca on Thompson, manager's safe | Vice City | **8140** | Ch. 3 *Credit Check* | Marked bills | Single source ("seen in streams") | GTA6Heists |
+| 20 | Moonstone Boutique back room (acid lab) | **K6** · Artist Village, Key Lento | **0420** | Ch. 1 *Lab Fees*. Threaten the clerk, or read the sticky note. | Hidden acid lab | Confirmed in gameplay (7 sources) | all major guides |
+| 21 | Brian's Lockup | **K6** · Key Lento, beside Isla Tropical Private Club | **7700** | *Lab Fees*. Brian phones it in. Play as Jason; the metal door is down the side alley. | Brian's strongbox for fencing loot | Confirmed in gameplay (7 sources) | all major guides |
+| 22 | Delights Cabaret, Frankie's office | **E3** · Port Gellhorn | **2008** | Ch. 2 *Afternoon Delight* / "Rob Vicki's Boss". Vicki texts it. | TitanVault safe: ~$115 and marked bills | Confirmed in gameplay | Vice City DB, GTA Scoop, Game Rant, IBTimes, GTA6Heists |
+| 23 | Raul's garage shutter | *unplaced* · Not stated | **2404** | Ch. 3 *First Impressions*. Saved to Notes. | **Schafter V12** getaway car | Credibly documented (2 sources) | GTA Scoop, Game Rant |
+| 24 | Balsero Kitty Litter Lab (central building) | **G6** · Balsero, Vice City | **1999** | Ch. 3 *Take Out Kitty Litter* | $2,500 | Single source | Game Rant |
+| 25 | Yasmani's Jewelry Jobs: Casa de Empeño / Richardson Jewelry / Donovan Banks & Co. | **H7** · Vice City (Richardson: Downtown; Donovan: Peacock Bay) | **1680 / 6815 / 0104** | Ch. 3. Codes are on the job card. **They only work during the job;** robbing later gives a random code. | Buffalo Skull Chain / Diamond Ring / Amethyst Necklace | Confirmed in gameplay | Vice City DB, GTA Scoop, Game Rant, IBTimes, GTA6Heists, RetroBroker |
+| 26 | Pilot Pete's hangar (back room, red door) | **E7** · Sundown Private Airfield | **3718** | Ch. 4 *The Last Mile: Passing the Torch* | Pete's stash / cash | Confirmed (4 sources, though GTA6Heists rates it "one guide") | Game Rant, GTA Scoop, IBTimes, GTA6Heists |
+| 27 | Legendary Custom Jewelry | **G8** · Ocean Beach mall, Vice City | **4207** | Ch. 4 mall heist (*Mall Rats*). Staff give it up. | Jewelry | Credibly documented; **"may vary"** | GTA Scoop, GTA6Heists |
+| 28 | Fleeca on Thompson, manager's safe | *unplaced* · Vice City | **8140** | Ch. 3 *Credit Check* | Marked bills | Single source ("seen in streams") | GTA6Heists |
 
 ### C. Gang hideout safes (Illegal Operations)
 
@@ -69,21 +117,21 @@ Clear the hideout, then open the safe. **Caveat:** Vice City DB, RetroBroker and
 
 | # | Hideout (gang) | Map position | Code | Clue on site | Rewards | Verification |
 |---|---|---|---|---|---|---|
-| 29 | Brooks Boatworks (Kolt & Associates) | NE Port Gellhorn docks; go in through the east fence hole | **6823** | Wall map upstairs in the grey building east of the main warehouse. It lists all three Kolt codes. | Gang cash, possible unique weapon or car | Confirmed in gameplay (shown on HUD) |
-| 30 | La Cascara Motel (Kolt) | Port Gellhorn | **6969** | Brooks wall map | Gang cash, **Scrapper VF5C SMG** (RetroBroker) | Confirmed |
-| 31 | Kingpin Bowling (Kolt) | Port Gellhorn, NE office by the pins | **0300** | Brooks wall map / notepad | Gang cash | Confirmed (enter the leading zero) |
-| 32 | Sunrise RV Park dock warehouse (Kingfishers) | Disputed: Cottonmouth Lake / Grassrivers / Hamlet | **6769** | Note in the shack east of the roundabout | Gang cash | Confirmed |
-| 33 | Nova Auto Junkyard (M7) | Hamlet | **7777** | Written on the wall behind the safe | Gang cash | Confirmed |
-| 34 | Farm Fix meth lab (Final Chapter) | McKittrick Farm, Leonard County (RetroBroker says "Belville hideout") | **2121** | Notepad in the office | ~$3,000 | Confirmed |
-| 35 | Janjak's Garage (San4San) | La Perle, Vice City | **4444** | Sticky note on the fridge | Cash, pink **Declasse Gin Tulip**, **San4San KZ‑59** rifle | Confirmed by 5 guides. RetroBroker alone says "no static code yet". |
-| 36 | Illegal Sneaker Trade / Drip Drops (San4San) | Vice City | **4124** | The notepad in the first safe's back room points to the building across the street, where the second safe uses 4124. | Gang cash | Confirmed |
-| 37 | Casa Guardia (Guardia Bros.) | Little Cuba, Vice City | **1965** | In the hideout | ~$9,600 | Confirmed |
-| 38 | Saber Shipping Facility (Guardia Bros.) | Balsero | **1122** *or* **1965** | Code written inside | Gang cash | **Conflict.** Game Rant, IBTimes and GTA Scoop say 1122; RetroBroker says 1965. GTA6Heists found it already open twice. Try 1122 first. |
-| 39 | Saber Shipping Yard (Guardia Bros.) | Vice City port / Little Cuba | **8046** | Map in an office | ~$9,800 | Confirmed |
-| 40 | Palmer Fishing Warehouse (La Polilla Negra) | Watson Bay | **1886** | Note on the ground-floor computer | ~$3,000 | Credibly documented (2) |
-| 41 | Watson Bay Safehouse (La Polilla Negra) | Watson Bay | **1819** | Message on a computer | ~$3,300 | Credibly documented. RetroBroker says "no static code". |
-| 42 | Thirsty Wolf Biker Clubhouse | Not stated | **1982** | Not documented | Not listed | Single source (Game Rant) |
-| 43 | Leonida Carrier Warehouse | Balsero | **9256** | Not documented | Gang cash | Single source (GTA6Heists, "not read on screen") |
+| 29 | Brooks Boatworks (Kolt & Associates) | **E3** · NE Port Gellhorn docks; go in through the east fence hole | **6823** | Wall map upstairs in the grey building east of the main warehouse. It lists all three Kolt codes. | Gang cash, possible unique weapon or car | Confirmed in gameplay (shown on HUD) |
+| 30 | La Cascara Motel (Kolt) | **E3** · Port Gellhorn | **6969** | Brooks wall map | Gang cash, **Scrapper VF5C SMG** (RetroBroker) | Confirmed |
+| 31 | Kingpin Bowling (Kolt) | **E3** · Port Gellhorn, NE office by the pins | **0300** | Brooks wall map / notepad | Gang cash | Confirmed (enter the leading zero) |
+| 32 | Sunrise RV Park dock warehouse (Kingfishers) | *unplaced* · Disputed: Cottonmouth Lake / Grassrivers / Hamlet | **6769** | Note in the shack east of the roundabout | Gang cash | Confirmed |
+| 33 | Nova Auto Junkyard (M7) | **J6** · Hamlet | **7777** | Written on the wall behind the safe | Gang cash | Confirmed |
+| 34 | Farm Fix meth lab (Final Chapter) | *unplaced* · McKittrick Farm, Leonard County (RetroBroker says "Belville hideout") | **2121** | Notepad in the office | ~$3,000 | Confirmed |
+| 35 | Janjak's Garage (San4San) | **G7** · La Perle, Vice City | **4444** | Sticky note on the fridge | Cash, pink **Declasse Gin Tulip**, **San4San KZ‑59** rifle | Confirmed by 5 guides. RetroBroker alone says "no static code yet". |
+| 36 | Illegal Sneaker Trade / Drip Drops (San4San) | *unplaced* · Vice City | **4124** | The notepad in the first safe's back room points to the building across the street, where the second safe uses 4124. | Gang cash | Confirmed |
+| 37 | Casa Guardia (Guardia Bros.) | **G7** · Little Cuba, Vice City | **1965** | In the hideout | ~$9,600 | Confirmed |
+| 38 | Saber Shipping Facility (Guardia Bros.) | **G6** · Balsero | **1122** *or* **1965** | Code written inside | Gang cash | **Conflict.** Game Rant, IBTimes and GTA Scoop say 1122; RetroBroker says 1965. GTA6Heists found it already open twice. Try 1122 first. |
+| 39 | Saber Shipping Yard (Guardia Bros.) | **G6** · Vice City port / Little Cuba | **8046** | Map in an office | ~$9,800 | Confirmed |
+| 40 | Palmer Fishing Warehouse (La Polilla Negra) | **J4** · Watson Bay | **1886** | Note on the ground-floor computer | ~$3,000 | Credibly documented (2) |
+| 41 | Watson Bay Safehouse (La Polilla Negra) | **J4** · Watson Bay | **1819** | Message on a computer | ~$3,300 | Credibly documented. RetroBroker says "no static code". |
+| 42 | Thirsty Wolf Biker Clubhouse | **E6** · Not stated | **1982** | Not documented | Not listed | Single source (Game Rant) |
+| 43 | Leonida Carrier Warehouse | **G6** · Balsero | **9256** | Not documented | Gang cash | Single source (GTA6Heists, "not read on screen") |
 
 ### D. Excluded on purpose: randomized codes
 
@@ -264,37 +312,37 @@ Codes from multi-source entries are in **bold**. Codes marked † are single-sou
 ## 5. Exploration checklist
 
 **Secrets and puzzles**
-- [ ] #1 Russo landmark (Downtown) → Little Cuba apartment → President's Bunker door `010317`
-- [ ] #2 President's Safe `2975`: 1922 Pistol
-- [ ] #3 IAA Black Site hatch `085355`: Cold War 556 and armored vehicle
-- [ ] #4 UFO abduction at night → dream → abandoned facility keypad (1-2-3-4 permutation): permanent stat boost
-- [ ] #5 Frampton Island bunker `3612`
-- [ ] #6 Pelican Valley outpost `CLEAVES` → `0072` → `0212`: Crabshack VF5
-- [ ] #7 Marbelle Hotel `955214`: Crowex watch
-- [ ] #8 Cottonmouth Lake trailer `44017`: Pounders card
-- [ ] #9 Mount Kalaga firewatch shed `69185`: Area 69 logbook
-- [ ] #10 Boobie's laptop `MuffinsQueen15` → Del Rio garage `92665`: Vanessa's Growler
-- [ ] #11 Father Scrumpy's orchard `360782`: Applesauce Bobcat
-- [ ] #12 Key Lento party house `092319`: Spiderweb Coquette
-- [ ] #13 Belville laundry `62412`
-- [ ] #14 Belpoint shipwreck `4242`
-- [ ] #15 B.E. Warehouse `789987` → `031462`: Kalinga .50
+- [ ] #1 (D7) Russo landmark (Downtown) → Little Cuba apartment → President's Bunker door `010317`
+- [ ] #2 (D7) President's Safe `2975`: 1922 Pistol
+- [ ] #3 (I4) IAA Black Site hatch `085355`: Cold War 556 and armored vehicle
+- [ ] #4 (J6) UFO abduction at night → dream → abandoned facility keypad (1-2-3-4 permutation): permanent stat boost
+- [ ] #5 (B6) Frampton Island bunker `3612`
+- [ ] #6 (J5) Pelican Valley outpost `CLEAVES` → `0072` → `0212`: Crabshack VF5
+- [ ] #7 (G7) Marbelle Hotel `955214`: Crowex watch
+- [ ] #8 (K5) Cottonmouth Lake trailer `44017`: Pounders card
+- [ ] #9 (C4) Mount Kalaga firewatch shed `69185`: Area 69 logbook
+- [ ] #10 (G7) Boobie's laptop `MuffinsQueen15` → Del Rio garage `92665`: Vanessa's Growler
+- [ ] #11 (D4) Father Scrumpy's orchard `360782`: Applesauce Bobcat
+- [ ] #12 (K6) Key Lento party house `092319`: Spiderweb Coquette
+- [ ] #13 (F6) Belville laundry `62412`
+- [ ] #14 (H2) Belpoint shipwreck `4242`
+- [ ] #15 (G6) B.E. Warehouse `789987` → `031462`: Kalinga .50
 - [ ] #16 Slum House `9790`
 - [ ] #17 Stormy `7869`
 - [ ] #18 Tiger mansion `4377`
-- [ ] #19 '74 Vamos garage `2727`
-- [ ] #44 "Don't Flush" QR (Corsair Key) → Dr. Merle `00-00-02` → Hamlet sewage plant: stamina boost
+- [ ] #19 (C4) '74 Vamos garage `2727`
+- [ ] #44 (I5) "Don't Flush" QR (Corsair Key) → Dr. Merle `00-00-02` → Hamlet sewage plant: stamina boost
 
-**Story and missions:** [ ] #20 `0420` [ ] #21 `7700` [ ] #22 `2008` [ ] #23 `2404` [ ] #24 `1999` [ ] #25 `1680/6815/0104` [ ] #26 `3718` [ ] #27 `4207` [ ] #28 `8140`
+**Story and missions:** [ ] #20 (K6) `0420` [ ] #21 (K6) `7700` [ ] #22 (E3) `2008` [ ] #23 `2404` [ ] #24 (G6) `1999` [ ] #25 (H7) `1680/6815/0104` [ ] #26 (E7) `3718` [ ] #27 (G8) `4207` [ ] #28 `8140`
 
-**Gang hideouts:** [ ] #29 `6823` [ ] #30 `6969` [ ] #31 `0300` [ ] #32 `6769` [ ] #33 `7777` [ ] #34 `2121` [ ] #35 `4444` [ ] #36 `4124` [ ] #37 `1965` [ ] #38 `1122/1965` [ ] #39 `8046` [ ] #40 `1886` [ ] #41 `1819` [ ] #42 `1982` [ ] #43 `9256`
+**Gang hideouts:** [ ] #29 (E3) `6823` [ ] #30 (E3) `6969` [ ] #31 (E3) `0300` [ ] #32 `6769` [ ] #33 (J6) `7777` [ ] #34 `2121` [ ] #35 (G7) `4444` [ ] #36 `4124` [ ] #37 (G7) `1965` [ ] #38 (G6) `1122/1965` [ ] #39 (G6) `8046` [ ] #40 (J4) `1886` [ ] #41 (J4) `1819` [ ] #42 (E6) `1982` [ ] #43 (G6) `9256`
 
 ## 6. Unknowns & community leads
 
 - **Stone Hills logbook (#9).** It sketches a tall, thin figure and mentions strange lights. Could be linked to the Frampton body or to the Skunk Ape / Bigfoot encounter SE of Cottonmouth Lake (Dexerto). Unsolved.
 - **Not code-locked, but nearby secrets worth noting:** the Hyde Island "hunt" (Manhunt/Saw-style; Island Poacher FF‑50 sniper and $20–30k), and the **Hauners Rhino** tank at Mile Zero Air Station, Goose Key (KeenGamer).
 - **Frampton Island bunker (#5).** The code was brute-forced, and nobody has found an in-game clue for 3612. A hanging body and nothing else suggests either a later update or an unfound trigger, much like GTA V's Mount Chiliad. **High-value lead.**
-- **Is Frampton linked to the President's Bunker?** Game Rant compares the two but doesn't say they're connected. Sources also disagree on where the President's Bunker is ("Sharktooth Island, Leonard County" vs "north of Waning Sands").
+- **Is Frampton linked to the President's Bunker?** Game Rant compares the two but doesn't say they're connected. (The President's Bunker location is now settled: gtadb puts Sharktooth Island just north of Waning Sands, D7.)
 - **Port Gellhorn docks container.** An unmoderated GTABase comment says a container at "row 25, tier 1" holds a Vapid car, with the clue on a dock office PC. No code is given.
 - **Marabunta camp near Millport.** A GTABase comment mentions a container with a "???" item on a table that gives endurance, single-use per character. No code is involved; unverified.
 - **No static code yet** (per RetroBroker): Hog Stars Garage, Manatee Motel, Watson Bay Safehouse, Janjak's Garage. Others have since published codes for the last two.
@@ -334,4 +382,6 @@ All pages were read on 23 Nov 2026.
 - GamerHour, *Black Eagle warehouse safe code* (21 Nov 2026): https://gamerhour.net/guides/gta-6-black-eagle-import-kalinga-black-eagle-warehouse-safe-code/
 - Hideout loot: vicecity.codes/gangs, itemlevel.net (La Cascara), ayther.fr (Janjak's). These are low-reputation sites.
 - BearPig on X, Frampton Island door report: https://x.com/BearPigCentral/status/2124629054628495538
+- Map tiles and landmark coordinates: GTA VI Map Tiles and GTA VI Landmarks Data (CC BY 4.0), https://map.gtadb.org / https://github.com/rolux/gtadb.org. Changes: tiles cropped, scaled, with grid and markers added.
+- Grid reference system: *Visit Leonida* poster map, as posted on Reddit (https://i.redd.it/i6uvpzmjvk2i1.jpeg). Provenance not verified. Only its grid is reproduced; the image itself is not included.
 - Release date: [Fox10 / AP](https://www.fox10tv.com/2026/10/16/gta-6-locks-nov-19-release-date-after-delays/?outputType=amp)
