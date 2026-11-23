@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1040" font-family="Helvetica, Arial, sans-serif">
+  <title>GTA VI code-locked locations: schematic region map</title>
+  <rect width="900" height="1040" fill="#0e2a3a"/>
+  <text x="450" y="34" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">GTA VI: code-locked locations (schematic)</text>
+  <text x="450" y="56" fill="#9fc3d6" font-size="13" text-anchor="middle">NOT TO SCALE. Markers sit inside the region named by the source guides; this is not a traced in-game map.</text>
+  <text x="450" y="74" fill="#9fc3d6" font-size="13" text-anchor="middle">Research date 23 Nov 2026. Numbers match the # column in README.md.</text>
+
+  <!-- landmass, rough peninsula silhouette -->
+  <path d="M120 110 L780 110 L790 300 L740 470 L760 640 L700 820 L610 900 L520 880 L470 760 L380 640 L250 560 L160 430 L110 280 Z" fill="#2f4a33" stroke="#7fa37f" stroke-width="2"/>
+  <!-- keys -->
+  <path d="M560 930 Q650 960 760 940" fill="none" stroke="#7fa37f" stroke-width="10" stroke-linecap="round" stroke-dasharray="40 14"/>
+
+  <g fill="none" stroke="#c9d9a8" stroke-width="1.2" stroke-dasharray="5 4">
+    <rect x="300" y="120" width="300" height="80"/>
+    <rect x="140" y="210" width="230" height="130"/>
+    <rect x="390" y="210" width="230" height="130"/>
+    <rect x="630" y="210" width="140" height="130"/>
+    <rect x="190" y="350" width="220" height="160"/>
+    <rect x="430" y="350" width="290" height="160"/>
+    <rect x="420" y="520" width="200" height="200"/>
+    <rect x="630" y="520" width="135" height="250"/>
+    <rect x="540" y="880" width="240" height="100"/>
+  </g>
+  <g fill="#e8f0d0" font-size="13" font-weight="bold">
+    <text x="310" y="138">LUMMOX COUNTY (far north)</text>
+    <text x="150" y="228">PORT GELLHORN</text>
+    <text x="400" y="228">MOUNT KALAGA / AMBROSIA</text>
+    <text x="640" y="228">FRAMPTON IS.</text>
+    <text x="200" y="368">KELLY CO. / MANIFEST CANYON</text>
+    <text x="440" y="368">MARIANA / LEONARD COUNTY</text>
+    <text x="430" y="538">GRASSRIVERS</text>
+    <text x="640" y="538">VICE CITY</text>
+    <text x="550" y="898">LEONIDA KEYS</text>
+  </g>
+
+  <style>
+    .m circle{stroke:#000;stroke-width:1.5}
+    .m text{font-size:12px;font-weight:bold;text-anchor:middle;dominant-baseline:central;fill:#000}
+    .c circle{fill:#4caf50}.s circle{fill:#ffb300}.r circle{fill:#e57373}
+  </style>
+
+  <g class="m c"><circle cx="165" cy="260" r="13"/><text x="165" y="260">22</text></g>
+  <g class="m c"><circle cx="203" cy="260" r="13"/><text x="203" y="260">29</text></g>
+  <g class="m c"><circle cx="241" cy="260" r="13"/><text x="241" y="260">30</text></g>
+  <g class="m c"><circle cx="279" cy="260" r="13"/><text x="279" y="260">31</text></g>
+  <g class="m c"><circle cx="420" cy="270" r="13"/><text x="420" y="270">9</text></g>
+  <g class="m s"><circle cx="458" cy="270" r="13"/><text x="458" y="270">13</text></g>
+  <g class="m r"><circle cx="700" cy="275" r="13"/><text x="700" y="275">5</text></g>
+  <g class="m s"><circle cx="230" cy="420" r="13"/><text x="230" y="420">11</text></g>
+  <g class="m s"><circle cx="465" cy="410" r="13"/><text x="465" y="410">1</text></g>
+  <g class="m s"><circle cx="503" cy="410" r="13"/><text x="503" y="410">2</text></g>
+  <g class="m s"><circle cx="541" cy="410" r="13"/><text x="541" y="410">3</text></g>
+  <g class="m c"><circle cx="579" cy="410" r="13"/><text x="579" y="410">19</text></g>
+  <g class="m c"><circle cx="617" cy="410" r="13"/><text x="617" y="410">34</text></g>
+  <g class="m c"><circle cx="455" cy="580" r="13"/><text x="455" y="580">4</text></g>
+  <g class="m c"><circle cx="493" cy="580" r="13"/><text x="493" y="580">6</text></g>
+  <g class="m c"><circle cx="531" cy="580" r="13"/><text x="531" y="580">8</text></g>
+  <g class="m c"><circle cx="569" cy="580" r="13"/><text x="569" y="580">32</text></g>
+  <g class="m c"><circle cx="650" cy="565" r="13"/><text x="650" y="565">7</text></g>
+  <g class="m c"><circle cx="688" cy="565" r="13"/><text x="688" y="565">10</text></g>
+  <g class="m c"><circle cx="726" cy="565" r="13"/><text x="726" y="565">25</text></g>
+  <g class="m c"><circle cx="650" cy="603" r="13"/><text x="650" y="603">33</text></g>
+  <g class="m c"><circle cx="688" cy="603" r="13"/><text x="688" y="603">35</text></g>
+  <g class="m c"><circle cx="726" cy="603" r="13"/><text x="726" y="603">36</text></g>
+  <g class="m c"><circle cx="650" cy="641" r="13"/><text x="650" y="641">37</text></g>
+  <g class="m c"><circle cx="688" cy="641" r="13"/><text x="688" y="641">39</text></g>
+  <g class="m s"><circle cx="726" cy="641" r="13"/><text x="726" y="641">15</text></g>
+  <g class="m s"><circle cx="650" cy="679" r="13"/><text x="650" y="679">27</text></g>
+  <g class="m s"><circle cx="688" cy="679" r="13"/><text x="688" y="679">38</text></g>
+  <g class="m r"><circle cx="726" cy="679" r="13"/><text x="726" y="679">16</text></g>
+  <g class="m r"><circle cx="650" cy="717" r="13"/><text x="650" y="717">17</text></g>
+  <g class="m r"><circle cx="688" cy="717" r="13"/><text x="688" y="717">24</text></g>
+  <g class="m r"><circle cx="726" cy="717" r="13"/><text x="726" y="717">28</text></g>
+  <g class="m r"><circle cx="650" cy="755" r="13"/><text x="650" y="755">43</text></g>
+  <g class="m c"><circle cx="580" cy="940" r="13"/><text x="580" y="940">20</text></g>
+  <g class="m c"><circle cx="618" cy="940" r="13"/><text x="618" y="940">21</text></g>
+  <g class="m s"><circle cx="656" cy="940" r="13"/><text x="656" y="940">12</text></g>
+  <g class="m r"><circle cx="694" cy="940" r="13"/><text x="694" y="940">14</text></g>
+  <text x="40" y="860" fill="#fff" font-size="13">Not placed (no region in sources):</text>
+  <text x="40" y="878" fill="#fff" font-size="13">18, 23, 26, 40, 41, 42</text>
+
+  <!-- legend -->
+  <g font-size="13" fill="#fff">
+    <circle cx="60" cy="1005" r="9" fill="#4caf50" stroke="#000"/><text x="76" y="1010">Multi-source (3+ guides, hands-on reports)</text>
+    <circle cx="380" cy="1005" r="9" fill="#ffb300" stroke="#000"/><text x="396" y="1010">2 sources / documented, unverified</text>
+    <circle cx="660" cy="1005" r="9" fill="#e57373" stroke="#000"/><text x="676" y="1010">Single source</text>
+  </g>
+</svg>
